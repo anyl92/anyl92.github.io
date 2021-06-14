@@ -22,13 +22,10 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - shell: bash
-        env:
-          KAKAO_KEY: ${{ secrets.KAKAO_KEY }}
-        run: |
-          example-commend "$KAKAO_KEY"
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        with:
+          access-token: ${{ secrets.KAKAO_KEY }}
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
@@ -39,3 +36,5 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+    env:
+      KAKAO_KEY: ${{ KAKAO_KEY }}
