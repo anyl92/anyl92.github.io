@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>winepick</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="survey-top-color"></div>
+    
+    <div class="result-img-box">
+      <img src="" alt="my_type_image" class="img-type" width="90%" height="100%">
+    </div>
+
+    <div class="result-text">
+      <div class="type-sub-text">
+        당신의 성향은
+      </div>
+      <div class="type-text">
+        센치한 도도형 고양이
+      </div>
+      <div class="type-description">
+        친절한 편이지만 만만한 성격은 아닌 유형입니다. 평소에는 밝고 친절하나, 와인을 마시면 복잡한 내면을 드러내는 편이에요. 조용히 홀짝홀짝 마시는 스타일이죠. 시끄러운 분위기보다는 차분하고 밀도 높은 대화를 선호하기 때문에 여러 명보다는 한두 명 모이는 자리를 선호할 것 같아요.
+      </div>
+    </div>
+
+    <div class="result-match">
+      <div class="match-wine">
+        <span class="match-main-text">
+          나와 어울리는 와인
+        </span>
+        <div class="match-img-box">
+          <img src="" alt="match-wine-image" class="img-match wine" width="90%" height="100%">
+        </div>
+        <span class="match-sub-text wine">
+          소비뇽 블랑
+        </span>
+      </div>
+      <div class="match-type">
+        <span class="match-main-text">
+          나와 잘 맞는 타입
+        </span>
+        <div class="match-img-box">
+          <img src="" alt="match-type-image" class="img-match type" width="100%" height="100%">
+        </div>
+        <span class="match-sub-text type">
+          모여모여 친목형
+        </span>
+      </div>
+    </div>
+    
+    <div class="share-button">
+      <button class="applink-button">winepick 앱에서 더 많은 와인 찾기</button>
+      <a id="kakao-link-btn" href="javascript:sendLink()">
+        <button class="kakao-button">
+          <!-- <img src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" /> -->
+          <img src="img/20_kakao_logo.png" alt="share-kakao" width="70%" height="55%">
+        </button>
+      </a>
+    </div>
+    <button class="restart-button">다시 테스트 하기</button>
+
+    <div class="modal" data-name="modal">
+      <span class="modal-main-text" data-name="modal">다시 테스트하시겠습니까?</span>
+      <span class="modal-sub-text" data-name="modal">기존의 결과는 사라져요.</span>
+      <button class="modal-no-button">아니오</button>
+      <button class="modal-yes-button">네</button>
+    </div>
+  </div>
+</div>
+</body>
+
+<script type="text/javascript" src="../js/result.js"></script>
+
+<script type="text/javascript">
+  function sendLink() {
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '딸기 치즈 케익',
+        description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
+        imageUrl:
+          'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+        link: {
+          mobileWebUrl: 'https://developers.kakao.com',
+          webUrl: 'https://developers.kakao.com',
+        },
+      },
+      buttons: [
+        {
+          title: '웹으로 보기',
+          link: {
+            mobileWebUrl: 'https://developers.kakao.com',
+            webUrl: 'https://developers.kakao.com',
+          },
+        },
+        {
+          title: '앱으로 보기',
+          link: {
+            mobileWebUrl: 'https://developers.kakao.com',
+            webUrl: 'https://developers.kakao.com',
+          },
+        },
+      ],
+    })
+  }
+</script>
+</html>

@@ -1,0 +1,422 @@
+
+a { text-decoration:none; }
+button { outline: none; border: none; }
+
+.container {
+  overflow: hidden;
+  width: min(100%, 360px);
+  margin: 0 auto;
+}
+
+
+/* index */
+
+.logo {
+  width: 89px;
+  height: 22px;
+  margin: 41px 0 63px 24px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.start-box {
+  width: 100%;
+  height: 354px;
+  margin: 63px auto;
+  padding: 40px 1px 32px;
+  object-fit: contain;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.start-main-text {
+  height: 18px;
+  font-family: NotoSansKR;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  display: block;
+}
+
+.start-sub-text {
+  height: 15px;
+  font-family: NotoSansKR;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.07;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  display: block;
+  margin-top: 13px;
+}
+
+.img-intro {
+  width: 90%;
+  height: 177px;
+  margin: 20px auto;
+  object-fit: contain;
+  display: block;
+}
+
+.start-button {
+  text-align: center;
+  display: flex;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+.start-text {
+  font-family: NotoSansKR;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.img-go-arrow {
+  width: 20px;
+  height: 20px;
+}
+
+
+/* survey */
+
+.survey {
+  position: relative;
+  width: 100%;
+  height: 265.33px;
+  margin: 0 auto;
+  margin-left: 24px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.survey-content {
+  display: inline-block;
+}
+
+.survey-top-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 24px;
+  margin: 0 0 18px;
+  background-color: #ebebeb;
+}
+
+.img-back-arrow {
+  width: 20px;
+  height: 20px;
+  margin: 42px 250px 38px 24px;
+  padding: 3px 12px 3px 1px;
+}
+
+.survey-number {
+  margin-bottom: 16px;
+}
+
+.survey-cur-number {
+  width: 19px;
+  height: 18px;
+  margin: 0 235px 0 0;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.survey-total-number {
+  width: 43px;
+  height: 13px;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #828282;
+}
+
+.survey-question {
+  display: block;
+  height: 60px;
+  font-family: NotoSansKR;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.58;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.survey-answer {
+  width: 312px;
+  height: 56px;
+  padding: 20px 0;
+  border-radius: 15px;
+  background-color: #ebebeb;
+  box-sizing: border-box;
+  display: block;
+  font-family: NotoSansKR;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #828282;
+}
+
+.survey-answer.A {
+  margin: 40px 0 16px 0;
+}
+
+.img-question-illust {
+  width: 310px;
+  height: 230px;
+  display: block;
+  margin: 24px auto;
+}
+
+
+/* result */
+
+.result-img-box {
+  margin: 70px 10% 37px;
+  text-align: center;
+}
+
+.type-sub-text {
+  margin: 0 42px 20px 41px;
+  font-family: NotoSansKR;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.type-text {
+  margin: 20px 0 0;
+  font-family: NotoSansKR;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.type-description {
+  margin: 24px 5% 56px;
+  font-family: NotoSansKR;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.92;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.result-match {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+
+.match-wine {
+  width: 50%;
+  float: left;
+}
+
+.match-type {
+  width: 50%;
+  float: right;
+}
+
+.match-main-text {
+  font-family: NotoSansKR;
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.match-img-box {
+  width: 148px;
+  height: 114px;
+  padding: 8px 9px;
+  margin: 24px auto 20px;
+  border-radius: 15px;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+}
+
+.img-match-img {
+  margin: auto
+}
+
+.match-sub-text {
+  font-family: NotoSansKR;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.share-button {
+  width: 312px;
+  height: 56px;
+  margin: 48px auto 11px;
+  font-family: NotoSansKR;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  display: flex;
+  justify-content: space-between;
+}
+
+.applink-button {
+  width: 250px;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.kakao-button {
+  width: 50px;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+  padding-top: 7px;
+}
+
+.restart-button {
+  width: 312px;
+  height: 56px;
+  margin: 0 auto 101px;
+  border: none;
+  background-color: #ffffff;
+  display: block;
+  font-family: NotoSansKR;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #515151;
+}
+
+
+/* modal */
+
+.modal {
+  display: none;
+  position: absolute;
+  width: 242px;
+  padding: 30px 0;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow : rgba(0,0,0,0.5) 0 0 0 9999px;
+  box-sizing: border-box;
+}
+
+.modal-main-text {
+  display: block;
+  font-family: NotoSansCJKKR;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.modal-sub-text {
+  display: block;
+  margin: 29px 36px 31px;
+  font-family: NotoSansCJKKR;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.79;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.modal-no-button {
+  width: 100px;
+  height: 48px;
+  margin: 0 12px;
+  border-radius: 10px;
+  background-color: #ebebeb;
+}
+
+.modal-yes-button {
+  width: 100px;
+  height: 48px;
+  border-radius: 10px;
+  background-color: #000000;
+  color: #ffffff;
+}
