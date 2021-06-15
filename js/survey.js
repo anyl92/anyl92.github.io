@@ -87,6 +87,7 @@ buttons.forEach(button => {
     }
 
     if (answers.length === 6) {
+      console.log(answers)
       if (typeNum) {  // 친구 집
         if (answers[5] === "A") {
           localStorage.wineType = 0
