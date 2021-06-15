@@ -127,19 +127,12 @@ function sendLink() {
     },
     buttons: [
       {
-        title: '웹에서 보기',
+        title: '결과 보기',
         link: {
           mobileWebUrl: 'https://anyl92.github.io/result.html?type=' + typeIdx,
           webUrl: 'https://anyl92.github.io/result.html?type=' + typeIdx,
-        },
-      },
-      {
-        title: '앱에서 보기',
-        link: {
-          mobileWebUrl: 'https://play.google.com/store/apps/details?id=kr.co.nexters.winepick',
-          webUrl: 'https://play.google.com/store/apps/details?id=kr.co.nexters.winepick',
-        },
-      },
+        }
+      }
     ],
   })
 }
