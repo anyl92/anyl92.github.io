@@ -62,13 +62,13 @@ const type = typeSet[typeIdx];
 const loadResult = () => {
   document.querySelector(".container").dataset.id = type;
 
-  document.querySelector(".img-type").src = type.img;
+  document.querySelector(".img-type").src = 'https://anyl92.github.io/' + type.img;
   document.querySelector(".type-text").innerHTML = type.text;
   document.querySelector(".type-description").innerHTML = type.description;
 
-  document.querySelector(".img-match.wine").src = type.imgWine;
+  document.querySelector(".img-match.wine").src = 'https://anyl92.github.io/' + type.imgWine;
   document.querySelector(".match-sub-text.wine").innerHTML = type.textWine;
-  document.querySelector(".img-match.type").src = type.imgType;
+  document.querySelector(".img-match.type").src = 'https://anyl92.github.io/' + type.imgType;
   document.querySelector(".match-sub-text.type").innerHTML = type.textType;
 }
 

@@ -116,7 +116,7 @@ button { outline: none; border: none; }
 }
 
 .survey-top-color {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
