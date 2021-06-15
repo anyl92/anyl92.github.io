@@ -4,13 +4,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>winepick</title>
+
+  <meta property="og:url" content="https://anyl92.github.io/result.html">
+  <meta property="og:title" content="내 와인 타입은?">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://anyl92.github.io/img/00_image_intro.png">
+  <meta property="og:description" content="여기룰 눌러 결과를 확인해보세요.">
+
+  <title>내 와인 타입은?</title>
   <link rel="stylesheet" href="css/index.css">
   <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+  
 </head>
 <body>
   <div class="container" data-id="">
     <div class="survey-top-color"></div>
+    
+    <div class="not-result">
+      <img src="img/weird_cat.png" alt="not-result-data" width="80%">
+      <div>설문 결과가 없어요.</div>
+      <a href="/survey.html"><button class="new-survey-button">내 와인 타입 알아보기</button></a>
+      <a href="/"><button class="new-main-button">메인으로 가기</button></a>
+    </div>
     
     <div class="result">
       <div class="result-img-box">
@@ -72,13 +87,6 @@
         <button class="modal-no-button">아니오</button>
         <button class="modal-yes-button">네</button>
       </div>
-    </div>
-
-    <div class="not-result">
-      <img src="img/weird_cat.png" alt="not-result-data" width="80%">
-      <div>설문 결과가 없어요.</div>
-      <a href="/survey.html"><button class="new-survey-button">내 와인 타입 알아보기</button></a>
-      <a href="/"><button class="new-main-button">메인으로 가기</button></a>
     </div>
 
   </div>
