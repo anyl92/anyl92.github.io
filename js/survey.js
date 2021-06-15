@@ -89,21 +89,21 @@ buttons.forEach(button => {
     if (answers.length === 6) {
       if (typeNum) {  // 친구 집
         if (answers[5] === "A") {
-          localStorage.wineType = 1
+          localStorage.wineType = 0
         } else if (answers[4] === "A") {
-          localStorage.wineType = 2
+          localStorage.wineType = 1
         } else if (answers[4] === "B") {
-          localStorage.wineType = 3
+          localStorage.wineType = 2
         }
       } else {  // 파티
         if (answers[3] === "A" && answers[5] === "A") {
-          localStorage.wineType = 6
-        } else if (answers[3] === "A" && answers[5] === "B") {
           localStorage.wineType = 5
-        } else if (answers[3] === "B" && answers[4] === "A") {
+        } else if (answers[3] === "A" && answers[5] === "B") {
           localStorage.wineType = 4
-        } else {
+        } else if (answers[3] === "B" && answers[4] === "A") {
           localStorage.wineType = 3
+        } else {
+          localStorage.wineType = 2
         }
       }
       window.location.href = "/result.html?type=" + localStorage.wineType
