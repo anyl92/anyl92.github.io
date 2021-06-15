@@ -5,11 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>winepick</title>
-  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="css/index.css">
   <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 </head>
 <body>
-  <div class="container">
+  <div class="container" data-id="">
     <div class="survey-top-color"></div>
     
     <div class="result-img-box">
@@ -74,40 +74,5 @@
 </div>
 </body>
 
-<script type="text/javascript" src="../js/result.js"></script>
-
-<script type="text/javascript">
-  Kakao.init("bf71aedbd5bd7b2270a9fdb42e3d4468");
-  function sendLink() {
-    Kakao.Link.sendDefault({
-      objectType: 'feed',
-      content: {
-        title: '딸기 치즈 케익',
-        description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
-        imageUrl:
-          'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
-        link: {
-          mobileWebUrl: 'https://developers.kakao.com',
-          webUrl: 'https://developers.kakao.com',
-        },
-      },
-      buttons: [
-        {
-          title: '웹으로 보기',
-          link: {
-            mobileWebUrl: 'https://developers.kakao.com',
-            webUrl: 'https://developers.kakao.com',
-          },
-        },
-        {
-          title: '앱으로 보기',
-          link: {
-            mobileWebUrl: 'https://developers.kakao.com',
-            webUrl: 'https://developers.kakao.com',
-          },
-        },
-      ],
-    })
-  }
-</script>
+<script type="text/javascript" src="js/result.js"></script>
 </html>

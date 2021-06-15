@@ -213,7 +213,7 @@ button { outline: none; border: none; }
 /* result */
 
 .result-img-box {
-  margin: 70px 10% 37px;
+  margin: 70px 10% 0;
   text-align: center;
 }
 

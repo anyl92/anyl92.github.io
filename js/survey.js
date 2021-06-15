@@ -103,7 +103,7 @@ buttons.forEach(button => {
           localStorage.wineType = 6
         }
       }
-      window.location.href = "/result.html"
+      window.location.href = "/result.html?type=" + localStorage.wineType
 
       return
     }
