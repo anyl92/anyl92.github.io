@@ -108,28 +108,28 @@ function sendLink() {
   Kakao.Link.sendDefault({
     objectType: 'feed',
     content: {
-      title: '내 와인 타입은?' + type.text,
+      title: type.text,
       description: type.description,
       imageUrl:
-        type.img,
+        'https://anyl92.github.io/' + type.img,
       link: {
-        mobileWebUrl: 'https://developers.kakao.com',
-        webUrl: 'https://developers.kakao.com',
+        mobileWebUrl: 'https://anyl92.github.io/result.html?type=' + typeIdx,
+        webUrl: 'https://anyl92.github.io/result.html?type=' + typeIdx,
       },
     },
     buttons: [
       {
-        title: '웹으로 보기',
+        title: '웹에서 보기',
         link: {
-          mobileWebUrl: 'https://developers.kakao.com',
-          webUrl: 'https://developers.kakao.com',
+          mobileWebUrl: 'https://anyl92.github.io/result.html?type=' + typeIdx,
+          webUrl: 'https://anyl92.github.io/result.html?type=' + typeIdx,
         },
       },
       {
-        title: '앱으로 보기',
+        title: '앱에서 보기',
         link: {
-          mobileWebUrl: 'https://developers.kakao.com',
-          webUrl: 'https://developers.kakao.com',
+          mobileWebUrl: 'https://play.google.com/store/apps/details?id=kr.co.nexters.winepick',
+          webUrl: 'https://play.google.com/store/apps/details?id=kr.co.nexters.winepick',
         },
       },
     ],
