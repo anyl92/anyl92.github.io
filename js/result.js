@@ -56,7 +56,15 @@ const typeSet = [
   }
 ]
 
-const typeIdx = localStorage.wineType ? localStorage.wineType : document.querySelector(".container").dataset.id;
+function getParameterByName(name) {
+  name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+  var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+  return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+const typeIdx = getParameterByName('type')? getParameterByName('type') : localStorage.wineType;
+console.log(typeIdx);
 const type = typeSet[typeIdx];
 
 const loadResult = () => {
