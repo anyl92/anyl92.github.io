@@ -112,7 +112,7 @@ button { outline: none; border: none; }
 }
 
 .survey-content {
-  display: inline-block;
+  display: none;
 }
 
 .survey-top-color {

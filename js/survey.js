@@ -46,6 +46,7 @@ let $containerTag = document.querySelector(".survey");
 const loadQuestion = () => {
   for (var i=0; i < 6; i++) {
     $containerTag.children[i].style.width = $containerTag.offsetWidth + "px";
+    $containerTag.children[i].style.display = "inline-block";
   }
 
   $containerTag.style.width = ($containerTag.offsetWidth * 6) + "px";
