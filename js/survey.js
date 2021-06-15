@@ -96,11 +96,11 @@ buttons.forEach(button => {
           localStorage.wineType = 3
         }
       } else {  // 파티
-        if (answers[3] === "A" && answer[5] === "A") {
+        if (answers[3] === "A" && answers[5] === "A") {
           localStorage.wineType = 6
-        } else if (answers[3] === "A" && answer[5] === "B") {
+        } else if (answers[3] === "A" && answers[5] === "B") {
           localStorage.wineType = 5
-        } else if (answers[3] === "B" && answer[4] === "A") {
+        } else if (answers[3] === "B" && answers[4] === "A") {
           localStorage.wineType = 4
         } else {
           localStorage.wineType = 3
