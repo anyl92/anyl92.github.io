@@ -1,7 +1,7 @@
 // import {KAKAO_KEY} from '../config';
 // console.log(KAKAO_KEY);
 
-var kakaokey = $KAKAO_KEY;
+var kakaokey = process.env.KAKAO_KEY;
 Kakao.init(kakaokey);
 
 const typeSet = [
