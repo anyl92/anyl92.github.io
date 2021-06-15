@@ -87,21 +87,23 @@ buttons.forEach(button => {
     }
 
     if (answers.length === 6) {
-      if (typeNum) {
-        if (answers[4] === "B") {
-          localStorage.wineType = 3
-        } else if (answers[5] === "A") {
+      if (typeNum) {  // 친구 집
+        if (answers[5] === "A") {
           localStorage.wineType = 1
-        } else if (answers[5] === "B") {
-          localStorage.wineType = 2
-        }
-      } else {
-        if (answers[3] === "A") {
-          localStorage.wineType = 5
         } else if (answers[4] === "A") {
-          localStorage.wineType = 4
-        } else if (answers[5] === "A") {
+          localStorage.wineType = 2
+        } else if (answers[4] === "B") {
+          localStorage.wineType = 3
+        }
+      } else {  // 파티
+        if (answers[3] === "A" && answer[5] === "A") {
           localStorage.wineType = 6
+        } else if (answers[3] === "A" && answer[5] === "B") {
+          localStorage.wineType = 5
+        } else if (answers[3] === "B" && answer[4] === "A") {
+          localStorage.wineType = 4
+        } else {
+          localStorage.wineType = 3
         }
       }
       window.location.href = "/result.html?type=" + localStorage.wineType
