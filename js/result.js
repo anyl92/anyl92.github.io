@@ -63,8 +63,12 @@ function getParameterByName(name) {
   return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
+if (getParameterByName('type') == "" && !localStorage.wineType) {
+  document.querySelector(".result").style.display = "none";
+  document.querySelector(".not-result").style.display = "block";
+};
+
 const typeIdx = getParameterByName('type')? getParameterByName('type') : localStorage.wineType;
-console.log(typeIdx);
 const type = typeSet[typeIdx];
 
 const loadResult = () => {

@@ -12,66 +12,75 @@
   <div class="container" data-id="">
     <div class="survey-top-color"></div>
     
-    <div class="result-img-box">
-      <img src="" alt="my_type_image" class="img-type" width="90%" height="100%">
-    </div>
+    <div class="result">
+      <div class="result-img-box">
+        <img src="" alt="my_type_image" class="img-type" width="90%" height="100%">
+      </div>
 
-    <div class="result-text">
-      <div class="type-sub-text">
-        당신의 성향은
-      </div>
-      <div class="type-text">
-        센치한 도도형 고양이
-      </div>
-      <div class="type-description">
-        친절한 편이지만 만만한 성격은 아닌 유형입니다. 평소에는 밝고 친절하나, 와인을 마시면 복잡한 내면을 드러내는 편이에요. 조용히 홀짝홀짝 마시는 스타일이죠. 시끄러운 분위기보다는 차분하고 밀도 높은 대화를 선호하기 때문에 여러 명보다는 한두 명 모이는 자리를 선호할 것 같아요.
-      </div>
-    </div>
-
-    <div class="result-match">
-      <div class="match-wine">
-        <span class="match-main-text">
-          나와 어울리는 와인
-        </span>
-        <div class="match-img-box">
-          <img src="" alt="match-wine-image" class="img-match wine" width="90%" height="100%">
+      <div class="result-text">
+        <div class="type-sub-text">
+          당신의 성향은
         </div>
-        <span class="match-sub-text wine">
-          소비뇽 블랑
-        </span>
-      </div>
-      <div class="match-type">
-        <span class="match-main-text">
-          나와 잘 맞는 타입
-        </span>
-        <div class="match-img-box">
-          <img src="" alt="match-type-image" class="img-match type" width="100%" height="100%">
+        <div class="type-text">
+          센치한 도도형 고양이
         </div>
-        <span class="match-sub-text type">
-          모여모여 친목형
-        </span>
+        <div class="type-description">
+          친절한 편이지만 만만한 성격은 아닌 유형입니다. 평소에는 밝고 친절하나, 와인을 마시면 복잡한 내면을 드러내는 편이에요. 조용히 홀짝홀짝 마시는 스타일이죠. 시끄러운 분위기보다는 차분하고 밀도 높은 대화를 선호하기 때문에 여러 명보다는 한두 명 모이는 자리를 선호할 것 같아요.
+        </div>
+      </div>
+
+      <div class="result-match">
+        <div class="match-wine">
+          <span class="match-main-text">
+            나와 어울리는 와인
+          </span>
+          <div class="match-img-box">
+            <img src="" alt="match-wine-image" class="img-match wine" width="90%" height="100%">
+          </div>
+          <span class="match-sub-text wine">
+            소비뇽 블랑
+          </span>
+        </div>
+        <div class="match-type">
+          <span class="match-main-text">
+            나와 잘 맞는 타입
+          </span>
+          <div class="match-img-box">
+            <img src="" alt="match-type-image" class="img-match type" width="100%" height="100%">
+          </div>
+          <span class="match-sub-text type">
+            모여모여 친목형
+          </span>
+        </div>
+      </div>
+      
+      <div class="share-button">
+        <a href="https://play.google.com/store/apps/details?id=kr.co.nexters.winepick">
+          <button class="applink-button">winepick 앱에서 더 많은 와인 찾기</button>
+        </a>
+        <a id="kakao-link-btn" href="javascript:sendLink()">
+          <button class="kakao-button">
+            <img src="img/20_kakao_logo.png" alt="share-kakao" width="70%" height="55%">
+          </button>
+        </a>
+      </div>
+      <button class="restart-button">다시 테스트 하기</button>
+
+      <div class="modal" data-name="modal">
+        <span class="modal-main-text" data-name="modal">다시 테스트하시겠습니까?</span>
+        <span class="modal-sub-text" data-name="modal">기존의 결과는 사라져요.</span>
+        <button class="modal-no-button">아니오</button>
+        <button class="modal-yes-button">네</button>
       </div>
     </div>
-    
-    <div class="share-button">
-      <a href="https://play.google.com/store/apps/details?id=kr.co.nexters.winepick">
-        <button class="applink-button">winepick 앱에서 더 많은 와인 찾기</button>
-      </a>
-      <a id="kakao-link-btn" href="javascript:sendLink()">
-        <button class="kakao-button">
-          <!-- <img src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" /> -->
-          <img src="img/20_kakao_logo.png" alt="share-kakao" width="70%" height="55%">
-        </button>
-      </a>
-    </div>
-    <button class="restart-button">다시 테스트 하기</button>
 
-    <div class="modal" data-name="modal">
-      <span class="modal-main-text" data-name="modal">다시 테스트하시겠습니까?</span>
-      <span class="modal-sub-text" data-name="modal">기존의 결과는 사라져요.</span>
-      <button class="modal-no-button">아니오</button>
-      <button class="modal-yes-button">네</button>
+    <div class="not-result">
+      <img src="img/weird_cat.png" alt="not-result-data" width="80%">
+      <div>설문 결과가 없어요.</div>
+      <a href="/survey.html"><button class="new-survey-button">내 와인 타입 알아보기</button></a>
+      <a href="/"><button class="new-main-button">메인으로 가기</button></a>
     </div>
+
   </div>
 </div>
 </body>

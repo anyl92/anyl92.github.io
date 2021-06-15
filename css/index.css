@@ -328,6 +328,7 @@ button { outline: none; border: none; }
 .applink-button {
   width: 250px;
   height: 100%;
+  font-size: 14px;
   border-radius: 15px;
   box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
   background-color: #000000;
@@ -338,7 +339,7 @@ button { outline: none; border: none; }
   width: 50px;
   height: 100%;
   object-fit: contain;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: #FFFFFF;
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
   padding-top: 7px;
@@ -346,22 +347,79 @@ button { outline: none; border: none; }
 
 .restart-button {
   width: 312px;
-  height: 56px;
+  height: 50px;
   margin: 0 auto 101px;
   border: none;
   background-color: #ffffff;
   display: block;
   font-family: NotoSansKR;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 1;
   letter-spacing: normal;
   text-align: center;
-  color: #515151;
+  color: #111111;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+  border-radius: 15px;
 }
 
+.not-result {
+  margin: 50px auto 30px;
+  display: none;
+}
+
+.not-result > img {
+  display: block;
+  margin: 0 auto;
+}
+
+.not-result div {
+  color: #adadad;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.new-survey-button {
+  width: 312px;
+  height: 56px;
+  padding: 20px 0;
+  border-radius: 15px;
+  background-color: #000000;
+  box-sizing: border-box;
+  display: block;
+  font-family: NotoSansKR;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 20px auto;
+}
+
+.new-main-button {
+  width: 312px;
+  height: 56px;
+  padding: 20px 0;
+  border-radius: 15px;
+  background-color: #ebebeb;
+  box-sizing: border-box;
+  display: block;
+  font-family: NotoSansKR;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #828282;
+  margin: 20px auto;
+}
 
 /* modal */
 
